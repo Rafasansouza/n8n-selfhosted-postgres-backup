@@ -30,6 +30,9 @@ services:
       - N8N_PORT=5678
       - NODE_ENV=production
       - GENERIC_TIMEZONE=America/Sao_Paulo
+      - WEBHOOK_TUNNEL_URL=https://59bf7df2a3d0.ngrok-free.app
+      - EDITOR_BASE_URL=https://59bf7df2a3d0.ngrok-free.app
+      - N8N_RUNNERS_ENABLED=true
     depends_on:
       - postgres
     volumes:
